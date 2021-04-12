@@ -34,6 +34,7 @@ $(document).ready(function(){
 
     // SECONDO ESERCIZIO
 
+    // creo un array di oggetti studenti
     var arrayStudenti = [
         {
             "nome" : "Giulio",
@@ -50,6 +51,9 @@ $(document).ready(function(){
     ];
 
     // console.log(arrayStudenti);
+   
+    // con un ciclo for e for..in stampo a schermo le proprietà 
+    // degli oggetti contenuti nell'array
 
     for ( var i= 0 ; i < arrayStudenti.length; i++) {
         var thisStudenti = arrayStudenti[i];
@@ -59,6 +63,24 @@ $(document).ready(function(){
             console.log( "chiave: " + key + " - valore: " + thisStudenti[key]);
         }
     }
+    
 
     // FINE SECONDO ESERCIZIO
+
+    // TERZO ESERCIZIO
+
+    // chiedo all'utente tramite (3) prompt di fornire nome, cognome, età
+    // creo un oggetto con le proprietà fornite dall'utente
+
+    var datiUtente = {
+        "nome" : prompt("Dimmi il tuo nome"),
+        "cognome" : prompt("Dimmi il tuo cognome"),
+        "eta" : prompt("Dimmi la tua età")
+    }
+
+    // lo pusho nell'array degli oggetti studenti
+    console.log(datiUtente);
+    arrayStudenti.push(datiUtente);
+    
+    // FINE TERZO ESERCIZIO
 });
