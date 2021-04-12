@@ -52,16 +52,15 @@ $(document).ready(function(){
 
     // console.log(arrayStudenti);
    
-    // con un ciclo for e for..in stampo a schermo le proprietà 
+    // stampo a schermo le proprietà 
     // degli oggetti contenuti nell'array
 
     for ( var i= 0 ; i < arrayStudenti.length; i++) {
         var thisStudenti = arrayStudenti[i];
         console.log(thisStudenti);
 
-        for(var key in thisStudenti) {
-            console.log( "chiave: " + key + " - valore: " + thisStudenti[key]);
-        }
+        console.log(thisStudenti.nome);
+        console.log(thisStudenti.cognome);
     }
     
 
