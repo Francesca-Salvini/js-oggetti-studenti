@@ -18,4 +18,15 @@
 
 $(document).ready(function(){
 
+    // creo un oggetto che descrive nome, cognome ed età di uno studente
+    var studente = {
+        "nome" : "Mario",
+        "cognome" : "Rossi",
+        "eta" : 23
+    }
+    
+    // stampo a schermo (console.log) tutte le proprietà dell'oggetto
+    for( var key in studente) {
+        console.log(studente[key]);
+    }
 });
