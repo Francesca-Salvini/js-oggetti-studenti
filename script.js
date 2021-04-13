@@ -74,7 +74,7 @@ $(document).ready(function(){
     var datiUtente = {
         "nome" : prompt("Dimmi il tuo nome"),
         "cognome" : prompt("Dimmi il tuo cognome"),
-        "eta" : prompt("Dimmi la tua età")
+        "eta" : parseInt(prompt("Dimmi la tua età"))
     }
 
     // lo pusho nell'array degli oggetti studenti
